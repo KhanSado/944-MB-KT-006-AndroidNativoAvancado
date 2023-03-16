@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/my_tab_bar"
+        layout="@layout/tab_bar" />
+
+    <io.github.bersoncrios.turmanovequatroquatro.ButtonCustom
+        android:id="@+id/custom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:size="MINI"
+        app:text="ENTRAR"
+        app:custom_text_color="@color/black"/>
+
+
+    <include
+        android:id="@+id/video1"
+        layout="@layout/video_preview"/>
+
+    <include
+        android:id="@+id/video2"
+        layout="@layout/video_preview"/>
+
+    <include
+        android:id="@+id/video3"
+        layout="@layout/video_preview"/>
+
+</LinearLayout>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/bar_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/yt_logo"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            app:srcCompat="@drawable/yt"-->
+<!--            tools:ignore="ContentDescription" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/video1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/bar_title" >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumb1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            app:srcCompat="@drawable/mdn_tumb" />-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/user1"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:src="@color/material_dynamic_neutral_variant70"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvTitle1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/title"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user1"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvChanelName1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginBottom="7dp"-->
+<!--                android:text="@string/channel_name"-->
+<!--                android:textSize="11sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user1"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvTitle1"-->
+<!--                app:layout_constraintVertical_bias="0.0" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/video2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/video1" >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumb2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            app:srcCompat="@drawable/mdn_tumb" />-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/user2"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:src="@color/material_dynamic_neutral_variant70"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvTitle2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/title"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user2"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvChanelName2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginBottom="7dp"-->
+<!--                android:text="@string/channel_name"-->
+<!--                android:textSize="11sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user2"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvTitle2"-->
+<!--                app:layout_constraintVertical_bias="0.0" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/video3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/video2" >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumb3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            app:srcCompat="@drawable/mdn_tumb" />-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/user3"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:src="@color/material_dynamic_neutral_variant70"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvTitle3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:text="@string/title"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user3"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvChanelName3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginBottom="7dp"-->
+<!--                android:text="@string/channel_name"-->
+<!--                android:textSize="11sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/user3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvTitle3" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    </LinearLayout>-->

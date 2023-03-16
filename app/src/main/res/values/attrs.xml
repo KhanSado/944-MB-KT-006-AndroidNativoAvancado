@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonCustom">
+        <attr name="text" format="string"/>
+        <attr name="enable" format="boolean"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="custom_text_color" format="reference|color"/>
+        <attr name="size" format="enum">
+            <enum name="DEFAULT" value="0"/>
+            <enum name="MINI" value="1"/>
+            <enum name="LARGE" value="2"/>
+            <enum name="LARGEST" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
